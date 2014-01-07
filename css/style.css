@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700italic);
+
+/* Général *************************************************************/
+/***********************************************************************/
+body{
+width: 98%;
+}
+
+
+
+/* Menu *************************************************************/
+/***********************************************************************/
+#menu{
+	background-image: url("../data/img/fond_menu.png");
+	background-repeat: no-repeat;
+	background-size: 98%;
+	height: 11.5vw;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:13%;
+	padding-top: 3%;
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	font-size: 3vw;
+	overflow: visible;
+
+
+
+}
+#menu ul{
+    padding : 0;
+    margin: 0;
+    margin-left : -4%;
+}
+#menu ul li{
+    display: inline-block;
+    margin-left:1%;
+    padding-right:1%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+#menu ul li ul{
+	position: absolute;
+	display: none;
+	background-image: url("../data/img/fond_sousmenu.png");
+	background-size: 100%;
+	width: 25vw;
+	padding : 0;
+    margin: 0;
+}
+
+#menu ul li:hover ul{
+	display: block;
+	
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#menu ul li ul li{
+    display: block;
+    text-align: left;
+	padding: 0;
+	padding-left: 4px;
+	margin-left: 4px;
+	width: 93%;
+	vertical-align: middle;
+
+}
+
+#menu a{
+    color:black;
+    text-decoration : none; 
+    cursor: pointer;
+}
+
+
+#menu a:hover{
+    color:red;
+    /* Pour que la coloraton se fasse avec une transition */       
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#menu img{
+	width: 2em;
+	height: 2em;
+}
+/* Corps *************************************************************/
+/***********************************************************************/
+
+/* Footer *************************************************************/
+/***********************************************************************/
+
+@media screen and (min-width: 1024px){
+	#conteneur{
+
+		width: 1024px;
+		margin-right: auto;
+		margin-left: auto;
+		border:1px solid #000;
+
+	}
+
+	#menu{
+
+		font-size:130%;
+		width: 60%;
+		height: 90px;
+
+	}
+	#menu ul {
+		margin-left : -10%;
+		margin-top:-1%;
+	}
+	#menu ul li ul{
+		width: 200px;
+	}
+
+}
